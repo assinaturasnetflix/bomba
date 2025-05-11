@@ -1,41 +1,19 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+// tailwind.config.js
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // Certifique-se que esta linha está correta
+    "./src/**/*.{js,jsx,ts,tsx}", // Mantenha jsx aqui caso use em outros projetos
   ],
   theme: {
     extend: {
-      colors: { // Cores personalizadas (exemplo)
-        'primary': '#00A99D', // Um verde-azulado vibrante
-        'secondary': '#FF6B6B', // Um coral/vermelho para acentos
-        'dark-bg': '#1A202C', // Um cinza escuro para fundos
-        'light-text': '#F7FAFC', // Texto claro
-        'dark-text': '#2D3748', // Texto escuro
+      colors: {
+        'brand-primary': '#00A99D', // Um verde-azulado moderno
+        'brand-secondary': '#FF6B6B', // Um coral para destaque
+        'brand-dark': '#1A202C', // Quase preto para fundos pesados
+        'brand-light': '#F7FAFC', // Um cinza muito claro
       },
-      fontFamily: { // Fontes elegantes (exemplo)
-        sans: ['Poppins', 'sans-serif'], // Fonte principal
-        serif: ['Merriweather', 'serif'], // Fonte para destaques ou citações
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'], // Exemplo de fonte moderna
       },
-      animation: {
-        'fade-in-up': 'fadeInUp 0.8s ease-out',
-        'slide-in-left': 'slideInLeft 0.8s ease-out',
-        'subtle-bounce': 'subtleBounce 2s infinite ease-in-out',
-      },
-      keyframes: {
-        fadeInUp: {
-          '0%': { opacity: '0', transform: 'translateY(20px)' },
-          '100%': { opacity: '1', transform: 'translateY(0)' },
-        },
-        slideInLeft: {
-          '0%': { opacity: '0', transform: 'translateX(-20px)' },
-          '100%': { opacity: '1', transform: 'translateX(0)' },
-        },
-        subtleBounce: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-5px)' },
-        }
-      }
     },
   },
   plugins: [],
