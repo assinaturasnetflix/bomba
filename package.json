@@ -1,12 +1,30 @@
 {
-  "name": "mural-de-recados-backend",
-  "version": "1.0.0",
-  "main": "server.js",
+  "name": "ac-mkt-tech",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "node server.js"
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "cors": "^2.8.5"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.8.0" // A versão pode variar
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.66", // A versão pode variar
+    "@types/react-dom": "^18.2.22", // A versão pode variar
+    "@vitejs/plugin-react": "^4.2.1", // A versão pode variar
+    "autoprefixer": "^10.4.19", // A versão pode variar
+    "eslint": "^8.57.0", // A versão pode variar
+    "eslint-plugin-react": "^7.34.1", // A versão pode variar
+    "eslint-plugin-react-hooks": "^4.6.0", // A versão pode variar
+    "eslint-plugin-react-refresh": "^0.4.6", // A versão pode variar
+    "postcss": "^8.4.38", // A versão pode variar
+    "tailwindcss": "^3.4.3", // A versão pode variar
+    "vite": "^5.2.0" // A versão pode variar
   }
 }
