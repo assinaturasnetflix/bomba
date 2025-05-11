@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-100 text-dark-text antialiased; /* Fundo padrão e anti-aliasing */
+  font-family: 'Poppins', sans-serif; /* Define a fonte padrão do Poppins */
+}
+
+/* Estilo para scroll suave */
+html {
+  scroll-behavior: smooth;
+}
